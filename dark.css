@@ -1,0 +1,63 @@
+/* The simulator uses one consistent dark palette on every screen. */
+:root{color-scheme:dark;--green:#14bc7e;--dark:#74d7b1;--ink:#e8efec;--muted:#a1b2aa;--line:#2b3c34;--soft:#18261f;--shadow:0 8px 24px #0003}
+html,body{background:#090f0d!important;color:var(--ink)!important}
+.app,.sheet{background:#101b18!important;border-color:#26372e!important}
+.ribbon{background:#27261b!important;border-color:#45412c!important;color:#d4c995!important}
+.top{background:linear-gradient(#0d1918,#122720e8,transparent)!important}
+.brand{color:#f3f7f5}.brand small{color:#9eb9aa}
+.home-copy h1{color:#cfddd5!important}.home-copy .eyebrow{background:#172b22d9!important;color:#b2c7bb!important}
+.map{inset:134px 0 135px!important;background-image:url('map.svg');background-repeat:repeat;cursor:grab!important;touch-action:none;user-select:none;filter:brightness(.33) saturate(.68);opacity:1!important}
+.map.dragging{cursor:grabbing!important}.map-art{display:none}
+.location{transform:translate(-50%,-68%)!important}.bubble{background:#1e3028!important;border-color:#415e4c!important;color:#edf7ef;box-shadow:0 8px 20px #0005!important;font-size:20px}
+.location small{color:#b2c3b5!important;background:#0e1b14b8;border-radius:20px;padding:5px 9px;font-size:10px}
+.pin{background:#152c20!important;box-shadow:0 0 0 5px #173b2866!important}
+.map-credit{background:#15251dcc!important;color:#92a898!important;left:15px!important;bottom:164px!important}
+.map-controls{position:absolute;left:15px;top:230px;z-index:4;display:grid;background:#182a21;border:1px solid #37513f;border-radius:13px;overflow:hidden;box-shadow:0 4px 14px #0004}
+.map-controls button{width:43px;height:43px;font-size:23px;color:#d3e7d9;border:0;background:transparent;touch-action:manipulation}
+.map-controls button:hover{background:#2a4432}.map-controls button:disabled{opacity:.3;cursor:default}.map-controls span{font:10px monospace;color:#90ad99;text-align:center;padding:2px}
+.map-controls #resetMap{border-top:1px solid #344b39;font-size:25px}
+.bottom{background:linear-gradient(transparent,#101b18 22%)!important}
+.category button{background:#1d3027!important;color:#c4d8cc;border:1px solid #2c4837!important;box-shadow:0 3px 9px #0003!important}
+.category .selected{background:#1d3a2b!important;color:#9ee7bd!important;border-color:#3e7351!important}
+.nav{border-color:#2a4033!important}.nav button{color:#90aa9a!important}.nav .active{color:#75dab0!important}
+.sheet-head{background:#101b18f5!important;backdrop-filter:blur(16px)}
+.bar h1{color:#f1f6f3}.close{color:#b1c4b7!important;min-height:32px}
+#formPage .bar{display:flex;flex-wrap:wrap;gap:10px;padding:16px 21px 23px}
+#formPage .bar h1{font-size:clamp(27px,7.2vw,34px);font-weight:750;line-height:1.5;order:2;flex-basis:100%;letter-spacing:-.5px}
+#formPage .bar .close{order:1;margin-right:auto}
+.card{background:#1a2a22!important;border:1px solid #2c4032!important;box-shadow:0 5px 12px #0003!important;border-radius:14px!important}
+.field label,.card-title{color:#d8e5dc;font-size:18px!important}
+.field input,.field textarea,.field select{color:#d1dfd5!important;font-size:16px!important}
+.field input::placeholder,.field textarea::placeholder{color:#82988a!important}
+.field:focus-within{border-color:#4f9870!important;box-shadow:0 0 0 2px #2d5c3a50!important}
+.select-card select{font-size:18px!important}.select-card option{background:#1c3024;color:#e5eee7}
+.radios{font-size:16px!important;justify-content:space-between;gap:10px!important}.radios input{width:21px!important;height:21px!important}
+.location-summary{background:#172a20!important;border-color:#2a4935!important;color:#a6c9b1!important}.location-summary span{color:#8dab98!important}
+.attach{background:#172e20!important;border-color:#47785a!important;color:#aed8ba!important}
+.hint,.detail dt{color:#93aa9c!important}.page-intro{color:#a0b7a8!important}
+.primary{color:white;background:#0db477;box-shadow:0 6px 17px #0003!important}.secondary{background:#1b3024!important;color:#bbd3c3!important;border-color:#354c3d!important}
+.notice{background:#29291e!important;color:#c9c29f!important}.error{background:#39241f!important;color:#efab96!important}
+.modal{background:#020a07b8!important}.dialog{background:#192a21!important;border:1px solid #304c39;box-shadow:0 25px 85px #0008!important;border-radius:23px!important}
+.success-icon{border-color:#276344!important;outline-color:#244732!important;color:#19c687!important}
+.dialog p{color:#a6bbae!important}.dialog h2{color:#e2eee5}
+#successModal .dialog{padding:35px 21px 21px;max-width:370px}
+#successModal .success-icon{width:78px;height:78px;margin:8px auto 27px;border-width:2px;outline-offset:7px}
+#successModal .success-icon svg{width:58px;height:58px;stroke-width:1.5}
+#successModal .tag{font-size:10px;display:inline-block;margin-bottom:3px}
+#successTitle{font-size:27px;font-weight:700;margin:12px 0 16px}
+#successModal .success-message{font-size:15px;line-height:1.8;margin:0 0 10px;color:#ceddd1!important}
+#successRef{font-variant-numeric:tabular-nums;font-weight:500;color:#f1f8f3}
+#successAttachments{font-size:14px}#successModal .success-local{font-size:10px;margin:10px 0 20px;color:#9aafa0!important}
+#successModal .primary{border-radius:28px;font-size:16px;min-height:54px}
+.ref{background:#122219!important;color:#bddac6;border:1px solid #304d39}
+.tag{background:#23412d!important;color:#aad0b5!important}.tag.cancelled{background:#3c3124!important;color:#dcbd98!important}
+.report-card{background:#192c21!important;border-color:#314c39!important;border-right-color:#4f9c69!important;color:#deede2}
+.report-meta{color:#96b29f!important}.cancel-report{background:#2d281f!important;color:#d1ad84!important;border-color:#5c4932!important}.delete{color:#d5957e!important}
+.empty svg{color:#6d9878!important}.info{color:#aec3b5!important}.info h2{color:#e2eee5!important}.toast{background:#2c5e3d!important;border:1px solid #4b8860;color:#ebf4ed!important;white-space:normal!important;text-align:center}
+.photo button{background:#283c2e!important;color:#e4b2a0!important}.viewer{background:#020a06ef!important}
+@media(max-width:360px){.category button{font-size:13px!important;padding-inline:7px!important}.category{gap:6px!important}.bottom{padding-inline:12px!important}.location small{font-size:9px}#formPage .bar h1{font-size:26px}.dialog{padding-inline:17px!important}}
+
+/* إخفاء النصوص الزائدة فوق الخريطة */
+.home-copy {
+    display: none !important;
+}
